@@ -14,3 +14,27 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+.header {
+  width: var(--header-width);
+  border: 2px solid var(--main-color);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-inline: auto;
+}
+
+.header__title {
+  font-family: var(--accent-font);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(3.063rem, 2.063rem + 3.2vi, 4.063rem);
+  padding: clamp(7.5rem, 7rem + 1.6vi, 8rem) clamp(0.875rem, -5.781rem + 21.3vi, 7.531rem) 20px clamp(0.875rem, -5.781rem + 21.3vi, 7.531rem);
+}
+
+.header__subtitle {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(0.875rem, 0.313rem + 1.8vi, 1.438rem);
+  padding: 0 clamp(5rem, -0.969rem + 19.1vi, 10.969rem) clamp(7.5rem, 7rem + 1.6vi, 8rem) clamp(5rem, -0.969rem + 19.1vi, 10.969rem);
+}
