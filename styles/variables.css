@@ -3,6 +3,8 @@
     --accent-font: 'PressStart2P', sans-serif;
     --main-text-weight: 400;
     --title-text-weight: 700;
-    --header-width: clamp(375px, 90vw, 700px);
+    --adpt-width: clamp(375px, 90vw, 700px);
     --main-color: #000;
+    --main-fsize: 18px;
+    --label-stroke-color: #fff;
 }

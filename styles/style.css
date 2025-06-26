@@ -16,7 +16,7 @@
 }
 
 .header {
-  width: var(--header-width);
+  width: var(--adpt-width);
   border: 2px solid var(--main-color);
   margin-top: 100px;
   margin-bottom: 100px;
@@ -37,4 +37,93 @@
   text-align: center;
   font-size: clamp(0.875rem, 0.313rem + 1.8vi, 1.438rem);
   padding: 0 clamp(5rem, -0.969rem + 19.1vi, 10.969rem) clamp(7.5rem, 7rem + 1.6vi, 8rem) clamp(5rem, -0.969rem + 19.1vi, 10.969rem);
+}
+
+.main__section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px
+}
+
+.card {
+  width: var(--adpt-width);
+  margin-inline: auto;
+  border: 2px solid var(--main-color);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 25px;
+}
+
+.card__title {
+  font-variation-settings: 'wght' var(--title-text-weight);
+  font-size: var(--main-fsize);
+  padding: 5px 0 5px 10px;
+}
+
+.card__image {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.card__image-wrap {
+  position: relative;
+}
+
+.card__image-label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  -webkit-text-stroke: 1px var(--label-stroke-color);
+  font-variation-settings: 'wght' var(--main-text-weight);
+  font-family: var(--accent-font);
+  font-size: 14px;
+  text-transform: uppercase;
+  mix-blend-mode: hard-light;
+}
+
+@supports (-webkit-text-stroke: 1px var(---label-stroke-color)) or (text-stroke: 1px var(--label-stroke-color)) {
+  .card__image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--label-stroke-color);
+    text-stroke: 1px var(--label-stroke-color);
+  }
+}
+
+.card__text {
+  font-size: var(--main-fsize);
+}
+
+.exp__text {
+  padding: 25px 0 25px 0;
+}
+
+.card__icon-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+
+}
+
+.like-icon {
+  width: 27px
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.button__text {
+  font-size: 14px;
+  font-family: var(--accent-font);
+  font-variation-settings: 'wght' var(--title-text-weight);
+  line-height: 90%;
+  padding: 12px 35px;
+  border: 2px solid var(--main-color);
 }
