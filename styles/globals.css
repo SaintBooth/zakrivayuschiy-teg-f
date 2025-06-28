@@ -66,4 +66,5 @@ ol {
 button {
   all: unset;
   cursor: pointer;
+  transition: fill 0.3s ease;
 }
