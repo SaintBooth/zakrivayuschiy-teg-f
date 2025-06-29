@@ -98,6 +98,7 @@
   z-index: 2;
   text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5),
     -1px -1px 0px rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
 }
 
 @supports (-webkit-text-stroke: 1px var(--label-stroke-color, #fff)) or
@@ -354,6 +355,10 @@
 
   .card {
     width: 100%;
+  }
+
+  .card__image-label {
+    right: 11px;
   }
 
   .card__title {
