@@ -111,6 +111,7 @@
 
 .card__text {
   font-size: var(--main-fsize, 18px);
+  line-height: 21px;
 }
 
 .exp__text {
